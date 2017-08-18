@@ -58,7 +58,6 @@ class Exportlogic(models.Model):
 	def get_bill(self):
 		records = self.env['res.partner'].search([('id','=',self.customer.id)])
 		print records
-		print "88888888888888888888888888888888888lllllllllllll"
 		if self.customer:
 			self.bill_types = records.bill_type
 
